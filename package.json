@@ -1,16 +1,23 @@
 {
   "name": "@codepan/kiwi-gitbook-cli",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "license": "MIT",
   "bin": {
     "kiwi-gitbook": "bin/index.js"
   },
+  "description": "一个使用gitbook来构建静态电子书，集成gulp对静态资源进行压缩混淆，并集成了ftp和scp两种方式自动化部署到服务器上的一个脚手架工具",
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "download-git-repo": "^2.0.0",
+    "ftp": "^0.3.10",
+    "gitbook-cli": "^2.3.2",
     "handlebars": "^4.1.2",
     "inquirer": "^6.5.0",
-    "ora": "^3.4.0"
+    "ora": "^3.4.0",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0"
   }
 }
